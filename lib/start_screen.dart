@@ -22,6 +22,7 @@ class StartScreen extends StatelessWidget {
             Image.asset(
               'assets/images/quiz-logo.png',
               width: 260,
+              color: const Color.fromARGB(111, 25, 5, 62),
             ),
             const Padding(
               padding: EdgeInsets.all(20),
@@ -41,10 +42,23 @@ class StartScreen extends StatelessWidget {
                   vertical: 10,
                 ),
               ),
-              child: const Text(
-                "Start Quiz",
-                style: TextStyle(
-                  color: Colors.white,
+              child: const SizedBox(
+                width: 100,
+                child: Row(
+                  children: [
+                    Text(
+                      "Start Quiz",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 14,
+                      ),
+                    ),
+                    Spacer(),
+                    Icon(
+                      Icons.arrow_right_alt,
+                      color: Colors.white,
+                    )
+                  ],
                 ),
               ),
             )
